@@ -1,0 +1,101 @@
+.create-liner-one{
+    content: url("../img/line-one.svg");
+}
+.create-liner-two{
+    content: url("../img/line-two.svg");
+}
+.create-liner-three{
+    content: url("../img/line-three.svg");
+}
+.create-liner-four{
+    content: url("../img/line-four.svg");
+}
+.icon-sty{
+    content: url("../img/sty.png");
+}
+.icon-pace{
+    content: url("../img/pace.png");
+}
+.icon-mus{
+    content: url("../img/mus.svg");
+}
+.track-length{
+    content: url("../img/track.png");
+}
+.icon-top-right{
+    content: url("../img/top-right.svg");
+}
+.icons-user{
+    content: url("../img/Icons-user.svg");
+}
+
+.icon-short{
+    content: url("../img/icon-sort.svg");
+}
+
+.icon-original{
+    content: url("../img/icon-original.svg");
+}
+
+.icon-high{
+    content: url("../img/icon-high.svg");
+}
+
+.icons-arrow-top{
+    content: url("../img/icons-arrow-top.svg");
+}
+
+.arrow-top-grad{
+    content: url("../img/arrow-top-grad.svg");
+}
+.icon-result{
+    content: url("../img/icon-result.png");
+}
+.icon-nero{
+    content: url("../img/nero.png");
+}
+
+.icon-head{
+    content: url("../img/icon-head.png");
+}
+.icon-hop{
+    content: url("../img/icon-hop.png");
+}
+.icon-calm{
+    content: url("../img/icon-calm.png");
+}
+.icon-melancholy{
+    content: url("../img/icon-melancholy.png");
+}
+
+.icon-relaxation{
+    content: url("../img/icon-relaxation.png");
+}
+
+.icon-synthwave{
+    content: url("../img/synthwave.png");
+}
+.icon-dreaminess{
+    content: url("../img/dreaminess.png");
+}
+.icon-space{
+    content: url("../img/icon-space.png");
+}
+.icon-feeling{
+    content: url("../img/icon-feeling.png");
+}
+.icon-arrow-bottom{
+    content: url("../img/arrow-bottom.svg");
+}
+.icon-racet{
+    content: url("../img/icon-racet.png");
+}
+.icon-right-target{
+    content: url("../img/right-target.png");
+}
+.icon-lump{
+    content: url("../img/lump.png");
+}
+.icon-naush{
+    content: url("../img/naush.png");
+}

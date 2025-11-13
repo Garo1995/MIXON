@@ -1,0 +1,22 @@
+<svg width="240" height="64" viewBox="0 0 240 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.4" filter="url(#filter0_f_9_802)">
+<rect x="30" y="30" width="180" height="4" rx="2" fill="url(#paint0_linear_9_802)"/>
+</g>
+<rect x="30" y="30" width="180" height="1" rx="0.5" fill="url(#paint1_radial_9_802)"/>
+<defs>
+<filter id="filter0_f_9_802" x="0" y="0" width="240" height="64" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="15" result="effect1_foregroundBlur_9_802"/>
+</filter>
+<linearGradient id="paint0_linear_9_802" x1="210" y1="34" x2="209.478" y2="22.1149" gradientUnits="userSpaceOnUse">
+<stop stop-color="#0052D4"/>
+<stop offset="0.47619" stop-color="#4364F7"/>
+<stop offset="1" stop-color="#66A8F3"/>
+</linearGradient>
+<radialGradient id="paint1_radial_9_802" cx="0" cy="0" r="1" gradientTransform="matrix(90 0 -89.9732 1.48835 120 30.4999)" gradientUnits="userSpaceOnUse">
+<stop stop-color="#4364F7"/>
+<stop offset="1" stop-opacity="0"/>
+</radialGradient>
+</defs>
+</svg>
