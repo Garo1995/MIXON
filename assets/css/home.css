@@ -1078,7 +1078,9 @@ p b{
     margin-bottom: 20px;
 }
 
-
+.languages-row-mobile{
+    display: none;
+}
 
 .languages-track {
     display: inline-flex;
@@ -1907,6 +1909,15 @@ footer{
         right: -5px;
         top: 18px;
     }
+    .languages-row-mobile {
+        display: block;
+    }
+    .languages-block:before {
+        height: 390px;
+    }
+    .languages-block:after {
+        height: 390px;
+    }
     .advantages-melodi {
         width: 163px;
         height: 52px;
@@ -1971,10 +1982,10 @@ footer{
         font-size: 9.33px;
     }
     .languages-block::before {
-        max-width: 74px;
+        max-width: 99px;
     }
     .languages-block::after {
-        max-width: 74px;
+        max-width: 99px;
     }
     .appstore-flex {
         margin-top: 40px;
