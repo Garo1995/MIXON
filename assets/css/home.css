@@ -760,6 +760,7 @@ p b{
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
+    background-position: center;
     height: 100%;
 }
 .examples-fon .container {
@@ -1222,13 +1223,14 @@ p b{
 .already-have-fon:before{
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: -51px;
     left: 0;
     background-image: url("../img/BG-already.webp");
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
     height: 849px;
+    background-position: center;
 }
 .already-have-fon .container{
     position: relative;
@@ -1407,9 +1409,7 @@ footer{
     .technologies-text {
         margin-top: -20px;
     }
-    .examples-fon:before{
-        background-position: center;
-    }
+
 
     .questions-click h4 {
         font-size: 18px;
@@ -1455,6 +1455,10 @@ footer{
     }
     .accordion {
         max-width: 560px;
+    }
+    .already-have-fon:before {
+        bottom: 35px;
+        height: 735px;
     }
 }
 
@@ -1976,5 +1980,9 @@ footer{
         margin-top: 40px;
         gap: 12px;
         flex-direction: column;
+    }
+    .already-have-fon:before {
+        bottom: 44px;
+        height: 436px;
     }
 }
