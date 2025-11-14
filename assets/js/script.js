@@ -194,7 +194,7 @@ document.querySelectorAll('.languages-row').forEach(row => {
     track.innerHTML = original + original;
 
     // Базовая скорость (десктопная)
-    let speed = parseInt(row.getAttribute('data-speed')) || 30;
+    let speed = parseInt(row.getAttribute('data-speed')) || 40;
 
     // Если мобильная версия → скорость медленнее
     if (window.innerWidth <= 600) {

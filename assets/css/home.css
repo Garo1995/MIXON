@@ -1091,7 +1091,7 @@ p b{
     animation-iteration-count: infinite;
     gap: 20px;
 
-    animation: scrollLine 20s linear infinite;
+    animation: scrollLine 25s linear infinite;
 
 }
 
