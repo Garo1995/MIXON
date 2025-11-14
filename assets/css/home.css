@@ -177,7 +177,7 @@ p b{
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url("../img/BG-mixon.webp");
+    background-image: url("../img/BG-mixon.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -351,6 +351,10 @@ p b{
     cursor: pointer;
     transition: 0.3s;
 }
+.poss-box:hover{
+    box-shadow: -4px -4px 100px 0px #484EFA14 inset;
+    border: 1px solid #4364F7;
+}
 .poss-box:before{
     content: "";
     position: absolute;
@@ -509,6 +513,8 @@ p b{
     background-image: url("../img/pattern.png");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
+
 }
 
 .audio-analysis-img{
@@ -1218,8 +1224,9 @@ p b{
 .submenu{
     display: none;
 }
-.submenu p{
+.submenu p {
     padding-right: 62px;
+    margin-top: 14px;
 }
 
 
@@ -1231,7 +1238,7 @@ p b{
 .already-have-fon:before{
     content: "";
     position: absolute;
-    bottom: -51px;
+    bottom: -76px;
     left: 0;
     background-image: url("../img/BG-already.webp");
     background-size: cover;
@@ -1256,7 +1263,14 @@ p b{
 
 
 
+.already-have-photo{
+    padding-bottom: 8px;
+}
 
+.already-have-photo:nth-child(3){
+    padding-bottom: 0;
+
+}
 
 
 
@@ -1366,6 +1380,17 @@ footer{
 .appstore{
     max-width: 185px;
     width: 100%;
+}
+
+
+@media (max-width: 1399px){
+    .languages-block:before{
+        max-width: 600px;
+    }
+    .languages-block:after{
+        max-width: 600px;
+    }
+
 }
 
 @media (max-width: 1299px){
@@ -1597,9 +1622,7 @@ footer{
     .audio-analysis-img {
         top: 118px;
     }
-    .audio-analysis:after, .sound-enhanc:after {
-        background-size: cover;
-    }
+
     .volume-box span {
         font-size: 10.2px;
         line-height: 16.11px;
@@ -1664,9 +1687,12 @@ footer{
         margin-top: 0;
     }
     .examples-box {
-        max-width: 344px;
+        max-width: 375px;
         height: 596px;
         padding: 20px;
+    }
+    .examples-text p {
+        margin-top: 8px;
     }
     .examples-slider .swiper-wrapper {
         display: flex;
@@ -1690,8 +1716,8 @@ footer{
         display: none;
     }
     .examples-photo {
-        max-width: 291px;
-        height: 291px;
+        max-width: 322px;
+        height: 322px;
 
     }
     .galact .examples-photo {
@@ -2007,5 +2033,11 @@ footer{
     }
    #multiling .global-title p {
         max-width: 266px;
+    }
+    .submenu p {
+        padding-right: 39px;
+    }
+    .create-music-cnt {
+        padding: 20px;
     }
 }
