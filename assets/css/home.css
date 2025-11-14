@@ -1090,6 +1090,9 @@ p b{
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     gap: 20px;
+
+    animation: scrollLine 20s linear infinite;
+
 }
 
 .flag{
@@ -1107,7 +1110,9 @@ p b{
 
 
 }
-
+.flag img{
+    height: 100%;
+}
 @keyframes scrollLine {
     from {
         transform: translateX(0);
@@ -1116,6 +1121,7 @@ p b{
         transform: translateX(-50%);
     }
 }
+
 
 
 
@@ -1357,7 +1363,10 @@ footer{
 
 
 
-
+.appstore{
+    max-width: 185px;
+    width: 100%;
+}
 
 @media (max-width: 1299px){
     h1 {
@@ -1995,5 +2004,8 @@ footer{
     .already-have-fon:before {
         bottom: 44px;
         height: 436px;
+    }
+   #multiling .global-title p {
+        max-width: 266px;
     }
 }

@@ -188,12 +188,22 @@ $('.open-reviews').on('click', function () {
 
 document.querySelectorAll('.languages-row').forEach(row => {
     const track = row.querySelector('.languages-track');
-    // дублируем чипсы, чтобы был бесконечный цикл
-    track.innerHTML = track.innerHTML + track.innerHTML;
 
-    const speed = row.getAttribute('data-speed') || 30; // сек
+    // Дублируем содержимое для бесконечного эффекта
+    const original = track.innerHTML;
+    track.innerHTML = original + original;
+
+    // Базовая скорость (десктопная)
+    let speed = parseInt(row.getAttribute('data-speed')) || 30;
+
+    // Если мобильная версия → скорость медленнее
+    if (window.innerWidth <= 600) {
+        speed = speed * 1.8; // Увеличиваем время → анимация становится медленнее
+    }
+
     const direction = row.getAttribute('data-direction') || 'left';
 
+    // Применяем
     track.style.animationDuration = speed + 's';
     track.style.animationDirection = direction === 'left' ? 'normal' : 'reverse';
 });
