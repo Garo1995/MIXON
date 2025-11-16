@@ -207,3 +207,62 @@ document.querySelectorAll('.languages-row').forEach(row => {
     track.style.animationDuration = speed + 's';
     track.style.animationDirection = direction === 'left' ? 'normal' : 'reverse';
 });
+
+
+
+
+
+
+
+
+
+
+
+let currentAudio = null;
+let currentBlock = null;
+
+document.querySelectorAll('.examples-play').forEach(btn => {
+    const playIcon = btn.querySelector('.play-mus');
+    const pauseIcon = btn.querySelector('.pous-mus');
+    const audioSrc = btn.dataset.audio;
+
+    btn.addEventListener('click', () => {
+
+        // Если нажали на ту же кнопку — play/pause
+        if (currentBlock === btn) {
+            if (currentAudio.paused) {
+                currentAudio.play();
+                playIcon.style.display = "none";
+                pauseIcon.style.display = "block";
+            } else {
+                currentAudio.pause();
+                playIcon.style.display = "block";
+                pauseIcon.style.display = "none";
+            }
+            return;
+        }
+
+        // Если играет другой трек — остановить
+        if (currentAudio) {
+            currentAudio.pause();
+            currentBlock.querySelector('.play-mus').style.display = "block";
+            currentBlock.querySelector('.pous-mus').style.display = "none";
+        }
+
+        // Создаем новое аудио
+        currentAudio = new Audio(audioSrc);
+        currentBlock = btn;
+
+        currentAudio.play();
+        playIcon.style.display = "none";
+        pauseIcon.style.display = "block";
+
+        // Когда трек закончится — вернуть play
+        currentAudio.onended = () => {
+            playIcon.style.display = "block";
+            pauseIcon.style.display = "none";
+            currentAudio = null;
+            currentBlock = null;
+        };
+    });
+});
